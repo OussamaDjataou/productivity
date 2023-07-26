@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:project/page1.dart';
 import 'package:project/page2.dart';
 //import 'package:project/test.dart';
+import 'package:project/page3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +40,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: ()=>Page1()),
-        GetPage(name: '/page2', page: () => Page2())],
+        GetPage(name: '/page2', page: () => Page2()),
+        GetPage(name: '/page2/page3', page: () => Page3())
+        ],
+        
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

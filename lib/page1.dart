@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
+import 'package:project/page2.dart';
+//import 'package:project/page3.dart';
 
 class Page1 extends StatefulWidget {
   const Page1({super.key});
@@ -70,7 +72,7 @@ class _PageState extends State<Page1> {
             height: 40,
           ),
           GestureDetector(
-            onTap: (){Get.toNamed('/page2');},
+            onTap: (){Get.to(Page2(),transition: Transition.leftToRight);},
             child: Container(
               padding: EdgeInsets.fromLTRB(100, 15, 100, 15),
               decoration: BoxDecoration(
